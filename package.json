@@ -1,0 +1,27 @@
+{
+  "name": "nodewebsite",
+  "version": "1.0.0",
+  "description": "This is a web site demo.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fire9/nodeWebSite.git"
+  },
+  "keywords": [
+    "node",
+    "web",
+    "express"
+  ],
+  "author": "fire9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fire9/nodeWebSite/issues"
+  },
+  "homepage": "https://github.com/fire9/nodeWebSite#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
