@@ -23,14 +23,10 @@ const express = require('express');
 const app = express();
 const host = '127.0.0.1';
 const port = 7788;
-
+const router = require("./app/routes");
+app.use('/', router);
 
 // run the server
 app.listen(port, host, function() {
     console.log('Server is running on port 7788');
-});
-
-// add route function
-app.get('/', function(req, res) {
-    res.end('Hello, Express!');
 });
