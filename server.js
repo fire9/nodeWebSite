@@ -24,8 +24,14 @@ const app = express();
 const host = '127.0.0.1';
 const port = 7788;
 const router = require("./app/routes");
+const path = require('path');
+
+// add router for app
 app.use('/', router);
 
+// set static files (css, js, images, etc) location
+// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 // run the server
 app.listen(port, host, function() {
     console.log('Server is running on port 7788');
